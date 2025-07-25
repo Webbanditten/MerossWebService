@@ -1,0 +1,12 @@
+services:
+  meross-webservice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: meross-webservice
+    restart: unless-stopped
+    environment:
+      - MEROSS_EMAIL=${MEROSS_EMAIL}
+      - MEROSS_PASSWORD=${MEROSS_PASSWORD}
+    ports:
+      - '8080:8080'
