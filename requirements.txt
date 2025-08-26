@@ -1,2 +1,2 @@
 flask==3.1.1
-meross-iot==0.4.9.0
+meross-iot==0.4.9.1
